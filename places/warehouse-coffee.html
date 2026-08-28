@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Warehouse Coffee - Details</title>
+  <title>Warehouse Coffee - Metro Manila Study Cafes</title>
 </head>
 <body bgcolor="#f7f3ef" text="#333333" link="#4a2c2a" vlink="#4a2c2a" alink="#a0522d" align="center" style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
 
+  <!-- Navigation Bar (Using ../ to go up one level) -->
   <header>
     <h1 style="color: #4a2c2a; margin-bottom: 5px;">Metro Manila Study Cafes</h1>
     <nav>
@@ -19,52 +20,87 @@
   <hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
 
   <main style="max-width: 600px; margin: 0 auto;">
-    
+
+    <!-- Place Details -->
     <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%; margin-bottom: 25px;">
       <tr>
         <td>
           <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 20px; text-align: center;">
-            <legend style="background-color: #4a2c2a; color: #ffffff; padding: 4px 12px; border-radius: 15px; font-weight: bold;">Featured Spot</legend>
-            <h2 style="color: #4a2c2a; margin: 5px 0;">Warehouse Coffee</h2>
+            <legend style="background-color: #4a2c2a; color: #ffffff; padding: 4px 12px; border-radius: 15px; font-weight: bold;">Featured Study Spot</legend>
             
-            <p style="color: #555555; line-height: 1.6; margin-bottom: 20px;">
-              Warehouse Coffee is a premier study haven located near the university belt area in Sampaloc, Manila. Designed specifically for students and remote workers, it provides generous workspace tables, ample power outlets, glowing neon ambiance, and a quiet, productive atmosphere for long study sessions.
-            </p>
-
-            <!-- Correct path back to root image -->
-            <img src="../place1.jpg" alt="Warehouse Coffee" width="320" style="border-radius: 8px; border: 1px solid #d4c3b3; margin-bottom: 20px;">
-
-            <h3 style="color: #4a2c2a; margin-bottom: 10px;">Place Details</h3>
-
-            <table align="center" border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse; border-color: #d4c3b3; text-align: left; font-size: 14px;">
-              <tr bgcolor="#4a2c2a" style="color: #ffffff;">
-                <th>Category</th>
-                <th>Information</th>
-              </tr>
-              <tr>
-                <td><b>Address</b></td>
-                <td>2nd Floor, YOU.suites, 2113 Recto Ave, Sampaloc, Manila, Metro Manila</td>
-              </tr>
-              <tr>
-                <td><b>Opening Hours</b></td>
-                <td>Monday–Saturday: 10:00 AM – 10:00 PM<br>Sunday: 10:00 AM – 8:00 PM</td>
-              </tr>
-              <tr>
-                <td><b>Price Range</b></td>
-                <td>₱100 – ₱250</td>
-              </tr>
-              <tr>
-                <td><b>Best Time to Visit</b></td>
-                <td>Weekday afternoons for minimal noise and optimal study spots</td>
-              </tr>
-            </table>
-
-            <br>
-            <a href="../index.html" style="color: #4a2c2a; font-weight: bold; text-decoration: none;">&larr; Back to Home</a>
+            <h2 style="color: #4a2c2a; margin: 10px 0;">Warehouse Coffee</h2>
+            <p style="color: #8c6239; font-weight: bold; font-size: 15px; margin: 5px 0;">Sampaloc, Manila</p>
+            <p style="color: #555555; line-height: 1.6;">A spacious industrial-style cafe offering fast Wi-Fi, plenty of power outlets, and great coffee for late-night study sessions.</p>
           </fieldset>
         </td>
       </tr>
     </table>
+
+    <!-- SUGGEST-A-PLACE FORM -->
+    <form action="warehouse-coffee.html" method="get">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%;">
+        <tr>
+          <td>
+            <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 25px; text-align: left;">
+              <legend style="background-color: #4a2c2a; color: #ffffff; padding: 6px 15px; border-radius: 20px; font-weight: bold; font-size: 15px;">Suggest a Place</legend>
+
+              <p style="color: #555555; margin-top: 0; margin-bottom: 15px;">Know a great spot? Recommend a place for us to feature in our guide!</p>
+
+              <!-- Required Place Name -->
+              <label for="place-name" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Place Name <span style="color: #c0392b;">*</span></label>
+              <input type="text" id="place-name" name="place-name" required placeholder="e.g. Treehouse Cafe" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px;">
+
+              <!-- Required Contact Email -->
+              <label for="contact-email" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Contact Email <span style="color: #c0392b;">*</span></label>
+              <input type="email" id="contact-email" name="contact-email" required placeholder="your.email@example.com" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px;">
+
+              <!-- Category (Radio buttons inside fieldset with legend) -->
+              <fieldset style="border: 1px solid #d4c3b3; border-radius: 6px; padding: 12px 15px; margin-bottom: 15px;">
+                <legend style="color: #4a2c2a; font-weight: bold; padding: 0 5px;">Category</legend>
+                
+                <input type="radio" id="cat-study" name="place-category" value="study-spot" checked>
+                <label for="cat-study" style="margin-right: 15px; cursor: pointer;">Study Spot</label>
+                
+                <input type="radio" id="cat-food" name="place-category" value="food-drink">
+                <label for="cat-food" style="margin-right: 15px; cursor: pointer;">Food & Drink</label>
+                
+                <input type="radio" id="cat-outdoor" name="place-category" value="outdoors">
+                <label for="cat-outdoor" style="cursor: pointer;">Outdoors</label>
+              </fieldset>
+
+              <!-- What's Good About It (Checkboxes sharing one name) -->
+              <fieldset style="border: 1px solid #d4c3b3; border-radius: 6px; padding: 12px 15px; margin-bottom: 20px;">
+                <legend style="color: #4a2c2a; font-weight: bold; padding: 0 5px;">What's good about it?</legend>
+                
+                <div style="margin-bottom: 8px;">
+                  <input type="checkbox" id="good-wifi" name="place-features" value="fast-wifi">
+                  <label for="good-wifi" style="cursor: pointer;">Fast Wi-Fi & Sockets</label>
+                </div>
+                
+                <div style="margin-bottom: 8px;">
+                  <input type="checkbox" id="good-quiet" name="place-features" value="quiet-environment">
+                  <label for="good-quiet" style="cursor: pointer;">Quiet Environment</label>
+                </div>
+                
+                <div>
+                  <input type="checkbox" id="good-affordable" name="place-features" value="affordable-prices">
+                  <label for="good-affordable" style="cursor: pointer;">Affordable Drinks</label>
+                </div>
+              </fieldset>
+
+              <!-- Submit Button -->
+              <div align="center">
+                <button type="submit" style="background-color: #4a2c2a; color: #ffffff; border: none; padding: 12px 28px; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer;">Submit Suggestion</button>
+              </div>
+
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <br>
+    <a href="../index.html" style="color: #4a2c2a; font-weight: bold; text-decoration: none;">&larr; Back to Guide Menu</a>
 
   </main>
 
