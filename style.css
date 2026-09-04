@@ -1,0 +1,124 @@
+/* ==========================================================================
+   1. VARIABLES
+   ========================================================================== */
+:root {
+  --brand-color: #4a2c2a;
+  --dark-ink: #333333;
+  --muted-grey: #8c6239;
+  --light-bg: #f7f3ef;
+  --white: #ffffff;
+  --card-border: #d7c4b7;
+}
+
+/* ==========================================================================
+   2. BASE STYLES
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-bg);
+  color: var(--dark-ink);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Accessible Keyboard Focus State */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--brand-color);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   3. LAYOUT REGIONS
+   ========================================================================== */
+header {
+  background-color: var(--brand-color);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+/* Styled Horizontal Nav Bar */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+nav a {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--card-border);
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted-grey);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--card-border);
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   4. COMPONENTS (Place Entry Cards)
+   ========================================================================== */
+.place-card {
+  background-color: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.place-card h2, 
+.place-card h3 {
+  margin-top: 0;
+  color: var(--brand-color);
+}
+
+.place-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
