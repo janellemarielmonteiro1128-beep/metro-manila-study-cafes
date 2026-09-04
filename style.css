@@ -55,11 +55,14 @@ header {
   color: var(--white);
   padding: 20px;
   text-align: center;
+  border-radius: 8px;
 }
 
 header h1 {
+  color: var(--white);
   margin: 0 0 10px 0;
   font-size: 1.8rem;
+  display: block;
 }
 
 /* Styled Horizontal Nav Bar */
