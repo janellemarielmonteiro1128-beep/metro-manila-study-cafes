@@ -5,41 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metro Manila Study Cafes - About</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Task 5.3 Horizontal Nav List Styles */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    nav a {
-      color: #ffffff !important;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #d4c3b3 !important;
-    }
-
-    /* Accessibility Focus State */
-    a:focus,
-    button:focus {
-      outline: 3px solid #ffffff;
-      outline-offset: 2px;
-    }
-  </style>
 </head>
-<body bgcolor="#f7f3ef" text="#333333" link="#4a2c2a" vlink="#4a2c2a" alink="#a0522d" align="center" style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+<body>
 
-  <header style="background-color: #4a2c2a; padding: 20px; border-radius: 8px;">
-    <h1 style="color: #ffffff; margin-bottom: 10px;">Metro Manila Study Cafes</h1>
+  <!-- Navigation Bar Container -->
+  <header>
+    <h1>Metro Manila Study Cafes</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -49,31 +20,31 @@
     </nav>
   </header>
 
-  <hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
-  <main style="max-width: 600px; margin: 0 auto;">
+  <main>
     
-    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%; margin-bottom: 25px;">
+    <!-- Our Mission Section -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%; margin-bottom: 25px;">
       <tr>
         <td>
-          <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 25px; text-align: center;">
-            <legend style="background-color: #4a2c2a; color: #ffffff; padding: 4px 15px; border-radius: 15px; font-weight: bold;">Our Mission</legend>
-            <h2 style="color: #4a2c2a; margin-top: 5px;">About the Guide</h2>
-            <p style="color: #555555; line-height: 1.6;">Metro Manila Study Cafes was created to help students, freelancers, and remote workers find the best study-friendly spots across the city.</p>
-            <p style="color: #555555; line-height: 1.6;">From quiet nooks in U-Belt to spacious cafes with fast Wi-Fi and ample power outlets in Sampaloc, we highlight top locations where you can stay focused and enjoy quality coffee.</p>
+          <fieldset class="place-card" style="text-align: center;">
+            <legend>Our Mission</legend>
+            <h2 style="margin-top: 5px;">About the Guide</h2>
+            <p style="color: var(--dark-ink); line-height: 1.6;">Metro Manila Study Cafes was created to help students, freelancers, and remote workers find the best study-friendly spots across the city.</p>
+            <p style="color: var(--dark-ink); line-height: 1.6;">From quiet nooks in U-Belt to spacious cafes with fast Wi-Fi and ample power outlets in Sampaloc, we highlight top locations where you can stay focused and enjoy quality coffee.</p>
           </fieldset>
         </td>
       </tr>
     </table>
 
-    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%;">
+    <!-- Creator Section -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%;">
       <tr>
         <td>
-          <fieldset style="background-color: #ffffff; border: 2px solid #d4c3b3; border-radius: 10px; padding: 25px; text-align: center;">
-            <legend style="background-color: #4a2c2a; color: #ffffff; padding: 4px 15px; border-radius: 15px; font-weight: bold;">The Creator</legend>
-            <h2 style="color: #4a2c2a; margin-top: 5px;">Meet the Author</h2>
-            <p style="color: #555555; line-height: 1.6;">Hi! I'm Janelle, a student and local cafe explorer dedicated to discovering practical workspace spots and sharing reliable reviews with fellow students.</p>
-            <img src="profile.jpg" alt="Janelle" width="220" style="border-radius: 10px; border: 2px solid #d4c3b3; margin-top: 10px;">
+          <fieldset class="place-card" style="text-align: center;">
+            <legend>The Creator</legend>
+            <h2 style="margin-top: 5px;">Meet the Author</h2>
+            <p style="color: var(--dark-ink); line-height: 1.6;">Hi! I'm Janelle, a student and local cafe explorer dedicated to discovering practical workspace spots and sharing reliable reviews with fellow students.</p>
+            <img src="profile.jpg" alt="Janelle" width="220" style="margin-top: 10px;">
           </fieldset>
         </td>
       </tr>
@@ -81,10 +52,8 @@
 
   </main>
 
-  <br><hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
   <footer>
-    <p style="color: #777777; font-size: 14px;">&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
+    <p>&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
   </footer>
 
 </body>

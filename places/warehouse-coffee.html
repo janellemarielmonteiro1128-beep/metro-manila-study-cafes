@@ -5,45 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Warehouse Coffee - Metro Manila Study Cafes</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* Task 5.3 Horizontal Nav List Styles */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    nav a {
-      color: #ffffff !important;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #d4c3b3 !important;
-    }
-
-    /* Accessibility Focus State */
-    a:focus,
-    button:focus,
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: 3px solid #ffffff;
-      outline-offset: 2px;
-    }
-  </style>
 </head>
-<body bgcolor="#f7f3ef" text="#333333" link="#4a2c2a" vlink="#4a2c2a" alink="#a0522d" align="center" style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+<body>
 
   <!-- Navigation Bar Container -->
-  <header style="background-color: #4a2c2a; padding: 20px; border-radius: 8px;">
-    <h1 style="color: #ffffff !important; margin: 0 0 10px 0; font-size: 28px; display: block;">Metro Manila Study Cafes</h1>
+  <header>
+    <h1>Metro Manila Study Cafes</h1>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -53,20 +20,18 @@
     </nav>
   </header>
 
-  <hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
-  <main style="max-width: 600px; margin: 0 auto;">
+  <main style="max-width: 550px;">
 
     <!-- Place Details -->
-    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%; margin-bottom: 25px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 25px;">
       <tr>
         <td>
-          <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 20px; text-align: center;">
-            <legend style="background-color: #4a2c2a; color: #ffffff; padding: 4px 12px; border-radius: 15px; font-weight: bold;">Featured Study Spot</legend>
+          <fieldset class="place-card" style="text-align: center;">
+            <legend>Featured Study Spot</legend>
             
-            <h2 style="color: #4a2c2a; margin: 10px 0;">Warehouse Coffee</h2>
-            <p style="color: #8c6239; font-weight: bold; font-size: 15px; margin: 5px 0;">Sampaloc, Manila</p>
-            <p style="color: #555555; line-height: 1.6;">A spacious industrial-style cafe offering fast Wi-Fi, plenty of power outlets, and great coffee for late-night study sessions.</p>
+            <h2 style="margin: 10px 0;">Warehouse Coffee</h2>
+            <p style="color: var(--accent-gold); font-weight: bold; font-size: 15px; margin: 5px 0;">Sampaloc, Manila</p>
+            <p style="color: var(--dark-ink); line-height: 1.6;">A spacious industrial-style cafe offering fast Wi-Fi, plenty of power outlets, and great coffee for late-night study sessions.</p>
           </fieldset>
         </td>
       </tr>
@@ -74,25 +39,25 @@
 
     <!-- SUGGEST-A-PLACE FORM -->
     <form action="warehouse-coffee.html" method="get">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
         <tr>
           <td>
-            <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 25px; text-align: left;">
-              <legend style="background-color: #4a2c2a; color: #ffffff; padding: 6px 15px; border-radius: 20px; font-weight: bold; font-size: 15px;">Suggest a Place</legend>
+            <fieldset>
+              <legend>Suggest a Place</legend>
 
-              <p style="color: #555555; margin-top: 0; margin-bottom: 15px;">Know a great spot? Recommend a place for us to feature in our guide!</p>
+              <p style="color: var(--muted-grey); margin-top: 0; margin-bottom: 15px;">Know a great spot? Recommend a place for us to feature in our guide!</p>
 
               <!-- Required Place Name -->
-              <label for="place-name" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Place Name <span style="color: #c0392b;">*</span></label>
-              <input type="text" id="place-name" name="place-name" required placeholder="e.g. Treehouse Cafe" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px;">
+              <label for="place-name" style="color: var(--brand-color); font-weight: bold; display: block; margin-bottom: 6px;">Place Name <span style="color: #c0392b;">*</span></label>
+              <input type="text" id="place-name" name="place-name" required placeholder="e.g. Treehouse Cafe">
 
               <!-- Required Contact Email -->
-              <label for="contact-email" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Contact Email <span style="color: #c0392b;">*</span></label>
-              <input type="email" id="contact-email" name="contact-email" required placeholder="your.email@example.com" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px;">
+              <label for="contact-email" style="color: var(--brand-color); font-weight: bold; display: block; margin-bottom: 6px;">Contact Email <span style="color: #c0392b;">*</span></label>
+              <input type="email" id="contact-email" name="contact-email" required placeholder="your.email@example.com">
 
-              <!-- Category (Radio buttons inside fieldset with legend) -->
-              <fieldset style="border: 1px solid #d4c3b3; border-radius: 6px; padding: 12px 15px; margin-bottom: 15px;">
-                <legend style="color: #4a2c2a; font-weight: bold; padding: 0 5px;">Category</legend>
+              <!-- Category Radio Buttons -->
+              <fieldset style="border: 1px solid var(--card-border); border-radius: 8px; padding: 12px 15px; margin-bottom: 15px;">
+                <legend style="background: none; color: var(--brand-color); font-weight: bold; padding: 0 5px; text-transform: none; font-size: 14px;">Category</legend>
                 
                 <input type="radio" id="cat-study" name="place-category" value="study-spot" checked>
                 <label for="cat-study" style="margin-right: 15px; cursor: pointer;">Study Spot</label>
@@ -104,9 +69,9 @@
                 <label for="cat-outdoor" style="cursor: pointer;">Outdoors</label>
               </fieldset>
 
-              <!-- What's Good About It (Checkboxes sharing one name) -->
-              <fieldset style="border: 1px solid #d4c3b3; border-radius: 6px; padding: 12px 15px; margin-bottom: 20px;">
-                <legend style="color: #4a2c2a; font-weight: bold; padding: 0 5px;">What's good about it?</legend>
+              <!-- Features Checkboxes -->
+              <fieldset style="border: 1px solid var(--card-border); border-radius: 8px; padding: 12px 15px; margin-bottom: 20px;">
+                <legend style="background: none; color: var(--brand-color); font-weight: bold; padding: 0 5px; text-transform: none; font-size: 14px;">What's good about it?</legend>
                 
                 <div style="margin-bottom: 8px;">
                   <input type="checkbox" id="good-wifi" name="place-features" value="fast-wifi">
@@ -125,8 +90,8 @@
               </fieldset>
 
               <!-- Submit Button -->
-              <div align="center">
-                <button type="submit" style="background-color: #4a2c2a; color: #ffffff; border: none; padding: 12px 28px; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer;">Submit Suggestion</button>
+              <div style="text-align: center;">
+                <button type="submit">Submit Suggestion</button>
               </div>
 
             </fieldset>
@@ -135,15 +100,14 @@
       </table>
     </form>
 
-    <br>
-    <a href="../index.html" style="color: #4a2c2a; font-weight: bold; text-decoration: none;">&larr; Back to Guide Menu</a>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="../index.html" style="font-weight: bold;">&larr; Back to Guide Menu</a>
+    </div>
 
   </main>
 
-  <br><hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
   <footer>
-    <p style="color: #777777; font-size: 14px;">&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
+    <p>&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
   </footer>
 
 </body>

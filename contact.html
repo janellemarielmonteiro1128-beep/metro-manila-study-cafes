@@ -5,44 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metro Manila Study Cafes - Contact</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Task 5.3 Horizontal Nav List Styles */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    nav a {
-      color: #ffffff !important;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #d4c3b3 !important;
-    }
-
-    /* Accessibility Focus State */
-    a:focus,
-    button:focus,
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: 3px solid #ffffff;
-      outline-offset: 2px;
-    }
-  </style>
 </head>
-<body bgcolor="#f7f3ef" text="#333333" link="#4a2c2a" vlink="#4a2c2a" alink="#a0522d" align="center" style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+<body>
 
-  <header style="background-color: #4a2c2a; padding: 20px; border-radius: 8px;">
-    <h1 style="color: #ffffff; margin-bottom: 10px;">Metro Manila Study Cafes</h1>
+  <!-- Navigation Bar Container -->
+  <header>
+    <h1>Metro Manila Study Cafes</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -52,52 +20,54 @@
     </nav>
   </header>
 
-  <hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
-  <main>
-    <h2 style="color: #4a2c2a;">Get in Touch With Us!</h2>
-    <p style="color: #555555; max-width: 500px; margin: 0 auto 20px auto;">
-      Have a study spot suggestion, a detail correction, or a question about our cafe guide? Send us a message below!
-    </p>
+  <main style="max-width: 550px;">
+    <section style="text-align: center; margin-bottom: 25px;">
+      <h2 style="font-family: 'Georgia', serif; margin-bottom: 5px;">Get in Touch With Us!</h2>
+      <p style="color: var(--muted-grey); max-width: 500px; margin: 0 auto;">
+        Have a study spot suggestion, a detail correction, or a question about our cafe guide? Send us a message below!
+      </p>
+    </section>
 
     <!-- Info Box -->
-    <table align="center" border="0" cellpadding="10" bgcolor="#ffffff" style="border: 1px solid #d4c3b3; border-radius: 8px; margin-bottom: 25px; max-width: 450px; width: 100%;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 25px;">
       <tr>
-        <td align="center">
-          <p style="margin: 5px 0;"><b>📧 Email:</b> contact@metromanilastudycafes.com</p>
-          <p style="margin: 5px 0;"><b>📞 Phone:</b> +63 912 345 6789</p>
-          <p style="margin: 5px 0;"><b>📍 Coverage:</b> Metro Manila, Philippines</p>
+        <td>
+          <div class="place-card" style="text-align: center; padding: 15px;">
+            <p style="margin: 6px 0;"><b>📧 Email:</b> contact@metromanilastudycafes.com</p>
+            <p style="margin: 6px 0;"><b>📞 Phone:</b> +63 912 345 6789</p>
+            <p style="margin: 6px 0;"><b>📍 Coverage:</b> Metro Manila, Philippines</p>
+          </div>
         </td>
       </tr>
     </table>
 
     <!-- Contact Form -->
     <form action="contact.html" method="get">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 100%;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
         <tr>
           <td>
-            <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 25px; text-align: left;">
-              <legend style="background-color: #4a2c2a; color: #ffffff; padding: 6px 15px; border-radius: 20px; font-weight: bold; font-size: 15px;">Your details</legend>
+            <fieldset>
+              <legend>Your details</legend>
 
-              <label for="user-name" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Name <span style="color: #c0392b;">*</span></label>
-              <input type="text" id="user-name" name="user-name" required placeholder="Your full name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px;">
+              <label for="user-name" style="color: var(--brand-color); font-weight: bold; display: block; margin-bottom: 6px;">Name <span style="color: #c0392b;">*</span></label>
+              <input type="text" id="user-name" name="user-name" required placeholder="Your full name">
 
-              <label for="user-email" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Email <span style="color: #c0392b;">*</span></label>
-              <input type="email" id="user-email" name="user-email" required placeholder="your.email@example.com" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px;">
+              <label for="user-email" style="color: var(--brand-color); font-weight: bold; display: block; margin-bottom: 6px;">Email <span style="color: #c0392b;">*</span></label>
+              <input type="email" id="user-email" name="user-email" required placeholder="your.email@example.com">
 
-              <label for="subject" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Subject</label>
-              <select id="subject" name="subject" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px; background-color: #ffffff;">
+              <label for="subject" style="color: var(--brand-color); font-weight: bold; display: block; margin-bottom: 6px;">Subject</label>
+              <select id="subject" name="subject">
                 <option value="suggest-place">Suggest a Place</option>
                 <option value="correct-detail">Correct a Detail</option>
                 <option value="ask-question">Ask a Question</option>
                 <option value="something-else">Something Else</option>
               </select>
 
-              <label for="message" style="color: #4a2c2a; font-weight: bold; display: block; margin-bottom: 5px;">Message <span style="color: #c0392b;">*</span></label>
-              <textarea id="message" name="message" rows="5" required placeholder="Write your message here..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 20px; font-size: 14px; font-family: Arial, sans-serif;"></textarea>
+              <label for="message" style="color: var(--brand-color); font-weight: bold; display: block; margin-bottom: 6px;">Message <span style="color: #c0392b;">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
 
-              <div align="center">
-                <button type="submit" style="background-color: #4a2c2a; color: #ffffff; border: none; padding: 12px 28px; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer;">Send message</button>
+              <div style="text-align: center; margin-top: 10px;">
+                <button type="submit">Send message</button>
               </div>
             </fieldset>
           </td>
@@ -106,10 +76,8 @@
     </form>
   </main>
 
-  <br><hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
   <footer>
-    <p style="color: #777777; font-size: 14px;">&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
+    <p>&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
   </footer>
 
 </body>

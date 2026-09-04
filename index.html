@@ -5,41 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metro Manila Study Cafes - Home</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Task 5.3 Horizontal Nav List Styles */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    nav a {
-      color: #ffffff !important;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #d4c3b3 !important;
-    }
-
-    /* Accessibility Focus State */
-    a:focus,
-    button:focus {
-      outline: 3px solid #ffffff;
-      outline-offset: 2px;
-    }
-  </style>
 </head>
-<body bgcolor="#f7f3ef" text="#333333" link="#4a2c2a" vlink="#4a2c2a" alink="#a0522d" align="center" style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+<body>
 
-  <header style="background-color: #4a2c2a; padding: 20px; border-radius: 8px;">
-    <h1 style="color: #ffffff; margin-bottom: 10px;">Metro Manila Study Cafes</h1>
+  <!-- Header Navigation (Task 5.3 Compliant) -->
+  <header>
+    <h1>Metro Manila Study Cafes</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -49,32 +20,32 @@
     </nav>
   </header>
 
-  <hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
   <main>
-    <h2 style="color: #4a2c2a;">Welcome to Metro Manila Study Cafes</h2>
-    <p style="color: #555555; max-width: 600px; margin: 0 auto 30px auto;">Discovering cozy, student-friendly workspaces and top study spots across Metro Manila.</p>
+    <section style="text-align: center; margin-bottom: 25px;">
+      <h2 style="font-family: 'Georgia', serif; margin-bottom: 5px;">Welcome to Metro Manila Study Cafes</h2>
+      <p style="color: var(--muted-grey); max-width: 600px; margin: 0 auto;">Discovering cozy, student-friendly workspaces and top study spots across Metro Manila.</p>
+    </section>
 
-    <h2 style="color: #4a2c2a; margin-bottom: 20px;">My Top Picks</h2>
+    <h2 style="text-align: center; font-family: 'Georgia', serif; margin-bottom: 20px;">My Top Picks</h2>
 
     <!-- Place 1 -->
-    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 100%; margin-bottom: 25px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%; margin-bottom: 25px;">
       <tr>
         <td>
-          <fieldset style="background-color: #ffffff; border: 2px solid #8c6239; border-radius: 10px; padding: 20px; text-align: center;">
-            <legend style="background-color: #4a2c2a; color: #ffffff; padding: 4px 12px; border-radius: 15px; font-weight: bold;">Top Choice</legend>
-            <h3 style="color: #4a2c2a; margin: 5px 0;">1. Warehouse Coffee</h3>
-            <p style="color: #8c6239; font-weight: bold; margin: 5px 0; font-size: 14px;">2nd Floor, YOU.suites, 2113 Recto Ave, Sampaloc, Manila, 1008 Metro Manila</p>
-            <p style="color: #555555; margin-bottom: 15px;">Spacious study haven with great seating, glowing neon signage, and a dedicated workspace setup for long study sessions.</p>
+          <fieldset class="place-card" style="text-align: center;">
+            <legend>Top Choice</legend>
+            <h3 style="margin: 8px 0; font-size: 20px;">1. Warehouse Coffee</h3>
+            <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">2nd Floor, YOU.suites, 2113 Recto Ave, Sampaloc, Manila, 1008 Metro Manila</p>
+            <p style="color: var(--dark-ink); margin-bottom: 18px;">Spacious study haven with great seating, glowing neon signage, and a dedicated workspace setup for long study sessions.</p>
             
             <!-- Warehouse Coffee Image -->
             <a href="places/warehouse-coffee.html">
-              <img src="place1.jpg" alt="Warehouse Coffee" width="280" style="border-radius: 8px; border: 1px solid #d4c3b3;">
+              <img src="place1.jpg" alt="Warehouse Coffee">
             </a>
             <br><br>
             
-            <!-- Fixed View Details & Menu Button Link -->
-            <a href="places/warehouse-coffee.html" style="background-color: #4a2c2a; color: #ffffff; padding: 10px 18px; border-radius: 6px; font-weight: bold; text-decoration: none; display: inline-block;">
+            <!-- View Details Button -->
+            <a href="places/warehouse-coffee.html" class="btn-link">
               View Details & Menu &rarr;
             </a>
           </fieldset>
@@ -83,28 +54,28 @@
     </table>
 
     <!-- Place 2 -->
-    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 100%; margin-bottom: 25px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%; margin-bottom: 25px;">
       <tr>
         <td>
-          <fieldset style="background-color: #ffffff; border: 2px solid #d4c3b3; border-radius: 10px; padding: 20px; text-align: center;">
-            <h3 style="color: #4a2c2a; margin: 5px 0;">2. Treehouse</h3>
-            <p style="color: #8c6239; font-weight: bold; margin: 5px 0; font-size: 14px;">Poblacion, Makati</p>
-            <p style="color: #555555; margin-bottom: 15px;">A cozy, aesthetic spot in Poblacion perfect for unwinding, studying, or catching up on work with great coffee options.</p>
-            <img src="place2.jpg" alt="Treehouse Poblacion" width="280" style="border-radius: 8px; border: 1px solid #d4c3b3;">
+          <fieldset class="place-card" style="text-align: center;">
+            <h3 style="margin: 8px 0; font-size: 20px;">2. Treehouse</h3>
+            <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Poblacion, Makati</p>
+            <p style="color: var(--dark-ink); margin-bottom: 18px;">A cozy, aesthetic spot in Poblacion perfect for unwinding, studying, or catching up on work with great coffee options.</p>
+            <img src="place2.jpg" alt="Treehouse Poblacion">
           </fieldset>
         </td>
       </tr>
     </table>
 
     <!-- Place 3 -->
-    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 100%; margin-bottom: 25px;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 550px; width: 100%; margin-bottom: 25px;">
       <tr>
         <td>
-          <fieldset style="background-color: #ffffff; border: 2px solid #d4c3b3; border-radius: 10px; padding: 20px; text-align: center;">
-            <h3 style="color: #4a2c2a; margin: 5px 0;">3. Majikasa Coffee</h3>
-            <p style="color: #8c6239; font-weight: bold; margin: 5px 0; font-size: 14px;">Makati City</p>
-            <p style="color: #555555; margin-bottom: 15px;">A relaxing coffee destination featuring quality specialty brews and a tranquil environment suited for productivity.</p>
-            <img src="place3.jpg" alt="Majikasa Coffee Makati" width="280" style="border-radius: 8px; border: 1px solid #d4c3b3;">
+          <fieldset class="place-card" style="text-align: center;">
+            <h3 style="margin: 8px 0; font-size: 20px;">3. Majikasa Coffee</h3>
+            <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Makati City</p>
+            <p style="color: var(--dark-ink); margin-bottom: 18px;">A relaxing coffee destination featuring quality specialty brews and a tranquil environment suited for productivity.</p>
+            <img src="place3.jpg" alt="Majikasa Coffee Makati">
           </fieldset>
         </td>
       </tr>
@@ -112,10 +83,8 @@
 
   </main>
 
-  <br><hr width="80%" color="#d4c3b3" style="margin: 20px auto;">
-
   <footer>
-    <p style="color: #777777; font-size: 14px;">&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
+    <p>&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
   </footer>
 
 </body>
