@@ -150,7 +150,7 @@ nav a:hover {
 }
 
 main {
-  max-width: 650px;
+  max-width: 900px; /* Changed from 650px to fit cards side-by-side */
   margin: 30px auto;
   padding: 0;
 }
@@ -305,4 +305,15 @@ fieldset > legend {
 
 fieldset > legend + * {
   clear: both !important;
+}
+
+.place-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+  margin-bottom: 30px !important;
+}
+
+.place-grid table {
+  flex: 1 1 240px !important;
 }
