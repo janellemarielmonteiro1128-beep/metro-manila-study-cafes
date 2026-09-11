@@ -462,3 +462,32 @@ main fieldset td {
   width: 100% !important;
   display: block !important;
 }
+
+/* ==========================================================================
+   EQUAL HEIGHT CARDS ALIGNMENT FIX
+   ========================================================================== */
+
+/* Force table cells inside place-grid to match heights and fill container */
+.place-grid table tr,
+.place-grid td {
+  height: 100% !important;
+  vertical-align: top !important;
+}
+
+.place-grid .place-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.place-grid .place-card img {
+  margin-top: auto !important;
+}
+
+.place-grid .place-card .btn-link,
+.place-grid .place-card button {
+  margin-top: 15px !important;
+}
