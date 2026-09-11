@@ -169,22 +169,23 @@ footer {
    ========================================================================== */
 .place-card,
 fieldset {
+  position: relative !important;
   background-color: var(--white) !important;
   border: 1px solid var(--card-border) !important;
+  border-left: 7px solid var(--brand-color) !important; /* Forces the thick 7px accent */
   border-radius: 16px !important;
   padding: 28px !important;
   margin-bottom: 25px;
-  /* Simulates rounded left accent border using inset box-shadow */
-  box-shadow: inset 7px 0 0 0 var(--brand-color), var(--shadow-sm) !important;
-  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
-  overflow: hidden !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-left-color 0.25s ease !important;
 }
 
 /* Hover transition to gold accent */
 .place-card:hover,
 fieldset:hover {
-  transform: translateY(-3px);
-  box-shadow: inset 7px 0 0 0 var(--accent-gold), var(--shadow-md) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: var(--shadow-md) !important;
+  border-left-color: var(--accent-gold) !important;
 }
 
 /* Task 5.4 - Coloured left border using brand variable */
