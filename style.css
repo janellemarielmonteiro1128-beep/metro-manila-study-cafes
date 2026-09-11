@@ -171,11 +171,15 @@ footer {
 fieldset {
   background-color: var(--white) !important;
   border: 1px solid var(--card-border) !important;
+  border-left: 7px solid var(--brand-color) !important; /* Thick brand accent border */
   border-radius: 16px !important;
+  border-top-left-radius: 16px !important;    /* Forces left accent to follow top rounded curve */
+  border-bottom-left-radius: 16px !important; /* Forces left accent to follow bottom rounded curve */
   padding: 28px !important; /* At least 16px padding */
   margin-bottom: 25px;      /* Prevents cards from touching */
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden !important;                /* Clips sharp border edges inside the rounded corners */
 }
 
 /* Task 5.4 - Coloured left border using brand variable */
