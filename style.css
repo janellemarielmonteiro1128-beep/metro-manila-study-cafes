@@ -374,20 +374,23 @@ header,
   width: 100% !important;
   height: 180px !important;
   object-fit: cover !important; /* Crops images cleanly to identical dimensions */
-  margin-top: auto !important;
+  margin-top: auto !important; /* Pushes every image down to bottom baseline */
 }
 
-.place-card img {
-  margin-top: auto !important; /* Pushes every image down to the bottom */
-}
-
+/* Standardize coffee card images overlay rule */
 main img[src*="place"], 
 main fieldset img {
   object-fit: cover !important;
 }
 
+/* FIX AUTHOR PORTRAIT PHOTO FRAME */
 main img:not([src*="place"]) {
-  max-height: 400px !important;
-  object-fit: contain !important;
-  object-position: center center !important;
+  width: 100% !important;
+  max-width: 320px !important; /* Restricts portrait image from spreading too wide */
+  height: 420px !important;    /* Provides vertical height for full face visibility */
+  object-fit: cover !important; /* Fills frame without side margins */
+  object-position: center 20% !important; /* Centers image on face */
+  border-radius: 12px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
