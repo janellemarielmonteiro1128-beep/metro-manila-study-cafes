@@ -438,3 +438,27 @@ main section {
   box-sizing: border-box !important;
   display: block !important;
 }
+
+/* ==========================================================================
+   FORCE FULL WIDTH LAYOUT ON ABOUT PAGE CARDS & FIELDSETS
+   ========================================================================== */
+
+main fieldset,
+main fieldset.place-card,
+body#about main fieldset,
+body#about .place-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  display: block !important;
+  float: none !important;
+  box-sizing: border-box !important;
+}
+
+main fieldset table,
+main fieldset tbody,
+main fieldset tr,
+main fieldset td {
+  width: 100% !important;
+  display: block !important;
+}
