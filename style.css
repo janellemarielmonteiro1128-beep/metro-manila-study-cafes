@@ -430,13 +430,11 @@ main img:not([src*="place"]) {
   margin-top: auto !important;
 }
 
-main img:not([src*="place"]) {
+main fieldset,
+main .place-card,
+main section {
   width: 100% !important;
-  max-width: 300px !important;
-  height: 400px !important;
-  object-fit: cover !important;
-  object-position: center 20% !important;
-  border-radius: 12px !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   display: block !important;
-  margin: 0 auto !important;
 }
