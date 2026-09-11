@@ -344,15 +344,18 @@ header,
 }
 
 .place-grid table {
-  flex: 1 1 280px !important;
+  flex: 1 1 260px !important;
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
 }
 
+.place-grid tbody,
+.place-grid tr,
 .place-grid td {
   display: flex !important;
   flex-direction: column !important;
+  flex: 1 !important;
   height: 100% !important;
   width: 100% !important;
 }
@@ -363,11 +366,13 @@ header,
   justify-content: space-between !important;
   height: 100% !important;
   margin-bottom: 0 !important;
+  box-sizing: border-box !important;
 }
 
 /* Standardize card images */
 .place-card img {
   width: 100% !important;
-  height: 200px !important;
+  height: 180px !important;
   object-fit: cover !important; /* Crops images cleanly to identical dimensions */
+  margin-top: auto !important;
 }
