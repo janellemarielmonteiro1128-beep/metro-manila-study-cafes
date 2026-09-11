@@ -394,3 +394,49 @@ main img:not([src*="place"]) {
   display: block !important;
   margin: 0 auto !important;
 }
+
+/* ==========================================================================
+   EQUAL HEIGHT CARDS & AUTHOR PORTRAIT PHOTO FIX
+   ========================================================================== */
+
+/* 1. Force table structures to stretch full card height */
+.place-grid tr {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.place-grid td {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  flex: 1 !important;
+  height: 100% !important;
+}
+
+/* 2. Ensure all place-card containers match Warehouse Coffee's height */
+.place-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
+.place-card img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  margin-top: auto !important;
+}
+
+main img:not([src*="place"]) {
+  width: 100% !important;
+  max-width: 300px !important;
+  height: 400px !important;
+  object-fit: cover !important;
+  object-position: center 20% !important;
+  border-radius: 12px !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
