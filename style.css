@@ -317,3 +317,57 @@ fieldset > legend + * {
 .place-grid table {
   flex: 1 1 240px !important;
 }
+
+/* 1. Make Main Container and Header match widths */
+main, 
+header, 
+.site-header {
+  max-width: 960px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. Fix CTA Banner Sizing & Padding */
+.cta-banner {
+  max-width: 100% !important;
+  min-height: auto !important;
+  padding: 16px 20px !important;
+  margin: 20px 0 30px 0 !important;
+}
+
+/* 3. Equal Card Heights & Image Alignment */
+.place-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  align-items: stretch !important; /* Forces cards to match height */
+}
+
+.place-grid table {
+  flex: 1 1 280px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.place-grid td {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.place-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  margin-bottom: 0 !important;
+}
+
+/* Standardize card images */
+.place-card img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important; /* Crops images cleanly to identical dimensions */
+}
