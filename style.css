@@ -377,22 +377,17 @@ header,
   margin-top: auto !important;
 }
 
-/* Fix 1: Push card images to the bottom so all 3 coffee cards align horizontally */
-.place-card a,
 .place-card img {
-  margin-top: auto !important;
+  margin-top: auto !important; /* Pushes every image down to the bottom */
 }
 
-/* Fix 2: Prevent cropping on your profile photo in about.html */
-.author-card img,
-.about-card img,
-main img[src*="profile"],
-main img[src*="author"],
-main img[src*="janelle"],
-main img[src*="me"] {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 380px !important;
-  object-fit: contain !important; /* Shows full face without cropping top or bottom */
-  object-position: center top !important;
+main img[src*="place"], 
+main fieldset img {
+  object-fit: cover !important;
+}
+
+main img:not([src*="place"]) {
+  max-height: 400px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
 }
