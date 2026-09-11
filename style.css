@@ -376,3 +376,23 @@ header,
   object-fit: cover !important; /* Crops images cleanly to identical dimensions */
   margin-top: auto !important;
 }
+
+/* Fix 1: Push card images to the bottom so all 3 coffee cards align horizontally */
+.place-card a,
+.place-card img {
+  margin-top: auto !important;
+}
+
+/* Fix 2: Prevent cropping on your profile photo in about.html */
+.author-card img,
+.about-card img,
+main img[src*="profile"],
+main img[src*="author"],
+main img[src*="janelle"],
+main img[src*="me"] {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 380px !important;
+  object-fit: contain !important; /* Shows full face without cropping top or bottom */
+  object-position: center top !important;
+}
