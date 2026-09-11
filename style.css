@@ -491,3 +491,22 @@ main fieldset td {
 .place-grid .place-card button {
   margin-top: 15px !important;
 }
+
+/* ==========================================================================
+   ALIGN BUTTONS & IMAGES TO BOTTOM BASELINE
+   ========================================================================== */
+
+.place-card {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.place-card img {
+  margin-top: auto !important;
+}
+
+.place-card a.btn-link,
+.place-card button {
+  margin-top: 15px !important;
+  align-self: center !important;
+}
