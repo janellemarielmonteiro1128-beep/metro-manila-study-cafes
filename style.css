@@ -674,3 +674,19 @@ nav ul,
     max-width: 1200px !important;
   }
 }
+
+/* ==========================================================================
+   ALIGN SIDEBAR TOP EDGE WITH CARDS GRID FIX
+   ========================================================================== */
+
+/* Remove default top margins so aside and main containers align exactly */
+aside,
+main {
+  margin-top: 0 !important;
+  align-self: start !important;
+}
+
+/* Ensure the place grid aligns flush to top of main */
+main .place-grid {
+  margin-top: 0 !important;
+}
