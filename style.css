@@ -592,3 +592,85 @@ footer {
 aside {
   align-self: start !important;
 }
+
+/* ==========================================================================
+   ACTIVITY 7.4: MOBILE-FIRST RESPONSIVE OVERRIDES & ENHANCEMENTS
+   ========================================================================== */
+
+/* Prevent accidental horizontal scrolling on small viewports */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Base Mobile Layout (Single column stacking) */
+.page {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-areas:
+    "masthead"
+    "hero"
+    "main"
+    "side"
+    "foot" !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Mobile Header & Nav adjustments */
+header,
+.site-header {
+  flex-direction: column !important;
+  text-align: center !important;
+  gap: 15px !important;
+  padding: 18px 15px !important;
+}
+
+nav ul,
+.site-header nav ul {
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+/* Place grid card stacking on mobile */
+.place-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+.place-grid table {
+  width: 100% !important;
+}
+
+/* Progressive enhancement for Tablet & Desktop using min-width queries */
+@media (min-width: 700px) {
+  header,
+  .site-header {
+    flex-direction: row !important;
+    text-align: left !important;
+    padding: 20px 30px !important;
+  }
+
+  .place-grid {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+
+  .place-grid table {
+    flex: 1 1 220px !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .page {
+    grid-template-columns: 260px 1fr !important;
+    grid-template-areas:
+      "masthead masthead"
+      "hero     hero"
+      "side     main"
+      "foot     foot" !important;
+    max-width: 1200px !important;
+  }
+}
