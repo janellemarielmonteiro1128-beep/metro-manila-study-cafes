@@ -8,116 +8,140 @@
 </head>
 <body>
 
-  <!-- Header Navigation (Task 5.3 Compliant) -->
-  <header>
-    <h1>Metro Manila Study Cafes</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Activity 7.3 Grid Layout Container -->
+  <div class="page">
 
-  <main style="max-width: 900px;">
-    <section style="text-align: center; margin-bottom: 25px;">
-      <h2 style="font-family: 'Georgia', serif; margin-bottom: 5px;">Welcome to Metro Manila Study Cafes</h2>
-      <p style="color: var(--muted-grey); max-width: 600px; margin: 0 auto;">Discovering cozy, student-friendly workspaces and top study spots across Metro Manila.</p>
+    <!-- Header Navigation (Task 5.3 Compliant) -->
+    <header>
+      <h1>Metro Manila Study Cafes</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Top Hero Section (Spans Full Width above Sidebar + Places) -->
+    <section class="top-hero">
+      <div style="text-align: center; margin-bottom: 25px;">
+        <h2 style="font-family: 'Georgia', serif; margin-bottom: 5px;">Welcome to Metro Manila Study Cafes</h2>
+        <p style="color: var(--muted-grey); max-width: 600px; margin: 0 auto;">Discovering cozy, student-friendly workspaces and top study spots across Metro Manila.</p>
+      </div>
+
+      <!-- CTA Banner Centered Horizontally & Vertically (Activity 6.3 / Lesson 6.4) -->
+      <div class="cta-banner">
+        <p style="margin: 0; font-size: 1.1rem; font-weight: 600;">☕ Find Your Perfect Study Spot in the Capital!</p>
+      </div>
     </section>
 
-    <!-- Added CTA Banner Centered Horizontally & Vertically (Activity 6.3 / Lesson 6.4) -->
-    <div class="cta-banner">
-      <p style="margin: 0; font-size: 1.1rem; font-weight: 600;">☕ Find Your Perfect Study Spot in the Capital!</p>
-    </div>
+    <!-- Content Area: Sidebar aligned side-by-side with 3 Places -->
+    <aside>
+      <h3>Quick Visitor Tips</h3>
+      <p>I usually go to these spots at night! The best times to grab a quiet study table and avoid peak hours are after 8:00 PM through late night (11:00 PM – 2:00 AM).</p>
+      
+      <br>
 
-    <h2 style="text-align: center; font-family: 'Georgia', serif; margin-bottom: 20px;">My Top Picks</h2>
+      <h3>Categories</h3>
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li>☕ <a href="#">Quiet Workspaces</a></li>
+        <li>🔌 <a href="#">Power Outlets Available</a></li>
+        <li>🌐 <a href="#">High-Speed Wi-Fi</a></li>
+        <li>🌙 <a href="#">Late Night Cafes</a></li>
+      </ul>
+    </aside>
 
-    <!-- Task 6.4 Responsive Flexbox Container -->
-    <div class="place-grid">
+    <main>
+      <h2 style="text-align: center; font-family: 'Georgia', serif; margin-bottom: 20px;">My Top Picks</h2>
 
-      <!-- Place 1 -->
-      <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 0;">
-        <tr>
-          <td>
-            <fieldset class="place-card" style="text-align: center;">
-              <legend>Top Choice</legend>
-              <h3 style="margin: 8px 0; font-size: 20px;">1. Warehouse Coffee</h3>
-              <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Warehouse Coffee is located on the 2nd Floor, YOU.suites (Brooklyn Warehouse), 2113 Recto Avenue, Sampaloc, Manila.</p>
-              <p style="color: var(--dark-ink); margin-bottom: 18px;">Spacious study haven with great seating, glowing neon signage, and a dedicated workspace setup for long study sessions.</p>
-              
-              <!-- Warehouse Coffee Image -->
-              <a href="places/warehouse-coffee.html">
-                <img src="place1.jpg" alt="Warehouse Coffee">
-              </a>
-              <br><br>
-              
-              <!-- View Details Button -->
-              <a href="places/warehouse-coffee.html" class="btn-link">
-                View Details & Menu &rarr;
-              </a>
-            </fieldset>
-          </td>
-        </tr>
-      </table>
+      <!-- Task 6.4 Responsive Flexbox Container -->
+      <div class="place-grid">
 
-      <!-- Place 2 -->
-      <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 0;">
-        <tr>
-          <td>
-            <fieldset class="place-card" style="text-align: center;">
-              <legend>Second Choice</legend>
-              <h3 style="margin: 8px 0; font-size: 20px;">2. Treehouse</h3>
-              <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Treehouse Bar & Art Café is located at 5966 Fermina Street, corner Alfonso Street, Barangay Poblacion, Makati City.</p>
-              <p style="color: var(--dark-ink); margin-bottom: 18px;">A cozy, aesthetic spot in Poblacion perfect for unwinding, studying, or catching up on work with great coffee options.</p>
-              
-              <!-- Treehouse Image -->
-              <a href="places/treehouse.html">
-                <img src="place2.jpg" alt="Treehouse Poblacion">
-              </a>
-              <br><br>
+        <!-- Place 1 -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 0;">
+          <tr>
+            <td>
+              <fieldset class="place-card" style="text-align: center;">
+                <legend>Top Choice</legend>
+                <h3 style="margin: 8px 0; font-size: 20px;">1. Warehouse Coffee</h3>
+                <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Warehouse Coffee is located on the 2nd Floor, YOU.suites (Brooklyn Warehouse), 2113 Recto Avenue, Sampaloc, Manila.</p>
+                <p style="color: var(--dark-ink); margin-bottom: 18px;">Spacious study haven with great seating, glowing neon signage, and a dedicated workspace setup for long study sessions.</p>
+                
+                <!-- Warehouse Coffee Image -->
+                <a href="places/warehouse-coffee.html">
+                  <img src="place1.jpg" alt="Warehouse Coffee">
+                </a>
+                <br><br>
+                
+                <!-- View Details Button -->
+                <a href="places/warehouse-coffee.html" class="btn-link">
+                  View Details & Menu &rarr;
+                </a>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
 
-              <!-- View Details Button -->
-              <a href="places/treehouse.html" class="btn-link">
-                View Details & Menu &rarr;
-              </a>
-            </fieldset>
-          </td>
-        </tr>
-      </table>
+        <!-- Place 2 -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 0;">
+          <tr>
+            <td>
+              <fieldset class="place-card" style="text-align: center;">
+                <legend>Second Choice</legend>
+                <h3 style="margin: 8px 0; font-size: 20px;">2. Treehouse</h3>
+                <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Treehouse Bar & Art Café is located at 5966 Fermina Street, corner Alfonso Street, Barangay Poblacion, Makati City.</p>
+                <p style="color: var(--dark-ink); margin-bottom: 18px;">A cozy, aesthetic spot in Poblacion perfect for unwinding, studying, or catching up on work with great coffee options.</p>
+                
+                <!-- Treehouse Image -->
+                <a href="places/treehouse.html">
+                  <img src="place2.jpg" alt="Treehouse Poblacion">
+                </a>
+                <br><br>
 
-      <!-- Place 3 -->
-      <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 0;">
-        <tr>
-          <td>
-            <fieldset class="place-card" style="text-align: center;">
-              <legend>Third Choice</legend>
-              <h3 style="margin: 8px 0; font-size: 20px;">3. Majikasa Coffee</h3>
-              <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Majikasa Cafe is located at 2100 Chino Roces Avenue Extension, Makati City, Metro Manila (situated right behind Roche Bobois Manila).</p>
-              <p style="color: var(--dark-ink); margin-bottom: 18px;">A relaxing coffee destination featuring quality specialty brews and a tranquil environment suited for productivity.</p>
-              
-              <!-- Majikasa Coffee Image -->
-              <a href="places/majikasa-coffee.html">
-                <img src="place3.jpg" alt="Majikasa Coffee Makati">
-              </a>
-              <br><br>
+                <!-- View Details Button -->
+                <a href="places/treehouse.html" class="btn-link">
+                  View Details & Menu &rarr;
+                </a>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
 
-              <!-- View Details Button -->
-              <a href="places/majikasa-coffee.html" class="btn-link">
-                View Details & Menu &rarr;
-              </a>
-            </fieldset>
-          </td>
-        </tr>
-      </table>
+        <!-- Place 3 -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 0;">
+          <tr>
+            <td>
+              <fieldset class="place-card" style="text-align: center;">
+                <legend>Third Choice</legend>
+                <h3 style="margin: 8px 0; font-size: 20px;">3. Majikasa Coffee</h3>
+                <p style="color: var(--accent-gold); font-weight: bold; margin: 4px 0; font-size: 14px;">Majikasa Cafe is located at 2100 Chino Roces Avenue Extension, Makati City, Metro Manila (situated right behind Roche Bobois Manila).</p>
+                <p style="color: var(--dark-ink); margin-bottom: 18px;">A relaxing coffee destination featuring quality specialty brews and a tranquil environment suited for productivity.</p>
+                
+                <!-- Majikasa Coffee Image -->
+                <a href="places/majikasa-coffee.html">
+                  <img src="place3.jpg" alt="Majikasa Coffee Makati">
+                </a>
+                <br><br>
 
-    </div>
+                <!-- View Details Button -->
+                <a href="places/majikasa-coffee.html" class="btn-link">
+                  View Details & Menu &rarr;
+                </a>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
 
-  </main>
+      </div>
 
-  <footer>
-    <p>&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
-  </footer>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Metro Manila Study Cafes. All rights reserved.</p>
+    </footer>
+
+  </div>
 
 </body>
 </html>

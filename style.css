@@ -510,3 +510,85 @@ main fieldset td {
   margin-top: 15px !important;
   align-self: center !important;
 }
+
+/* ==========================================================================
+   Activity 7.3: Named Grid Area Skeleton Layout
+   ========================================================================== */
+.page {
+  display: grid !important;
+  grid-template-columns: 240px 1fr !important;
+  grid-template-areas:
+    "masthead masthead"
+    "side     main"
+    "foot     foot" !important;
+  gap: 20px !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+/* Assign Page Regions to Grid Areas */
+header,
+.site-header { 
+  grid-area: masthead !important; 
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+aside { 
+  grid-area: side !important;
+  background-color: var(--white);
+  border: 1px solid var(--card-border);
+  border-left: 7px solid var(--brand-color);
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-sm);
+  align-self: start;
+}
+
+aside h3 {
+  margin-top: 0;
+  color: var(--brand-color);
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+}
+
+main { 
+  grid-area: main !important; 
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+footer { 
+  grid-area: foot !important; 
+  width: 100% !important;
+  margin-top: 20px !important;
+}
+
+/* ==========================================================================
+   ADDED OVERRIDES: SIDEBAR ALIGNMENT & FULL-WIDTH HERO OVERRIDE
+   ========================================================================== */
+
+/* 1. Update Grid Layout template areas to support hero banner row */
+.page {
+  grid-template-columns: 260px 1fr !important;
+  grid-template-areas:
+    "masthead masthead"
+    "hero     hero"
+    "side     main"
+    "foot     foot" !important;
+  max-width: 1200px !important;
+}
+
+/* 2. Assign top-hero container to span full width top grid row */
+.top-hero {
+  grid-area: hero !important;
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+
+/* 3. Ensure sidebar locks to the top of the main places section */
+aside {
+  align-self: start !important;
+}
